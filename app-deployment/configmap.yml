@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: myenv
+data:
+  username: masoud
+  password: mk2233
