@@ -1,0 +1,3 @@
+kubectl taint nodes node-name key=value:taint-effect #for taint a node 
+kubectl describe node kubemaster | grep Taint #to show the information of the pod base on taints
+kubectl label nodes <node-name> <label-key>=<label-value> #for node selector

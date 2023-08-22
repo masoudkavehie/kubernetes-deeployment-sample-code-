@@ -43,7 +43,11 @@ spec:
               hostPath:
               path: /data
               type: Directory
-
+          tolerations:
+            - key: ""
+              operator: “Equal”
+              value: “"
+              effect: ""
         - name: log-container
           image: busybox
           resources:
@@ -57,3 +61,5 @@ spec:
               "while true; do echo $(date) - Log from log-container; sleep 10; done",
             ]
           restartPolicy: always
+          nodeSelector:
+            size: Large
