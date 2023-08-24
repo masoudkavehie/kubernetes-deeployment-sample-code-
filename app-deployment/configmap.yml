@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: myenv
 data:
-  username: masoud
-  password: mk2233
+  username: //
+  password: //
